@@ -34,9 +34,9 @@ const lastName = "Farias";
 console.log(firstName + " " + lastName);
 
 //Assignment operators
-let x = 10 + 5;
-X += 20;
-x *= 4;
+// let x = 10 + 5;
+// x += 20;
+// x *= 4;
 
 //Comparison operators
 
@@ -51,3 +51,11 @@ const isFullAge = ageSarah >= 18;
 //var deve ser evitada, utiliza em codigos antigos
 
 console.log(now - 19991 > now - 2018);
+
+console.log(25 - 10 - 5);
+
+let x, y;
+x = y - 25 - 10 - 5;
+
+//Average Calculator
+const average = (ageJonas + ageSarah) / 2;
