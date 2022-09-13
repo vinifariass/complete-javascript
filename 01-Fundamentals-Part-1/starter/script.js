@@ -134,5 +134,13 @@ GOOD LUCK 😀
 if (bmiMark > bmiJohn) {
   console.log(`Mark's BMI (${bmiMark}) is higher than John's (${bmiJohn})!  `);
 } else {
-  console.log(`John's (${bmiJohn}) BMI is higher than John's (${bmiMark})!`);
+  console.log(`John's (${bmiJohn}) BMI is higher than Mark's (${bmiMark})!`);
 }
+
+const inputYear = '1991'
+//the original value was not converted
+console.log(Number(inputYear))
+console.log(Number(inputYear) + 18)
+//NaN not a number(numero invalido)
+
+console.log(String(23),23)
