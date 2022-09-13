@@ -20,7 +20,7 @@ let age = 30;
 lastName = "Vinicius Farias";
 console.log(lastName);
 
-const birthYear = 1991;
+// const birthYear = 1991;
 const now = 2037;
 const ageJonas = now - 1991;
 const ageSarah = now - 2018;
@@ -75,12 +75,18 @@ TEST DATA 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1
 GOOD LUCK 😀
 */
 
-var markMass = 78;
-var johnMass = 95;
-var johnHeight = 1.88;
-var markHeight = 1.69;
-var bmiMark = markMass / markHeight ** 2;
-var bmiJohn = johnMass / johnHeight ** 2;
-var markHigherBMI = bmiMark>bmiJohn;
+const markMass = 78;
+const johnMass = 95;
+const johnHeight = 1.88;
+const markHeight = 1.69;
+const bmiMark = markMass / markHeight ** 2;
+const bmiJohn = johnMass / johnHeight ** 2;
+const markHigherBMI = bmiMark > bmiJohn;
 
-console.log(bmiJohn, bmiMark,markHigherBMI);
+console.log(bmiJohn, bmiMark, markHigherBMI);
+
+const birthYear = 1991;
+const year = 2037;
+const jonas =
+  "I'm" + firstName + ", a" + (year - birthYear) + "years old" + job + "!";
+console.log(jonas);
