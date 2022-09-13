@@ -143,4 +143,11 @@ console.log(Number(inputYear))
 console.log(Number(inputYear) + 18)
 //NaN not a number(numero invalido)
 console.log(String(23),23)
+
 //Type coercion
+console.log('I am' + 23 + ' years old');
+//If we use minus they are converted to number 
+//If we use plus they are converted to string
+console.log('23' - '10' - 3) 
+console.log('23'* '2')
+//times converts to number two
