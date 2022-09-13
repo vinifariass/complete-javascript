@@ -142,5 +142,5 @@ const inputYear = '1991'
 console.log(Number(inputYear))
 console.log(Number(inputYear) + 18)
 //NaN not a number(numero invalido)
-
 console.log(String(23),23)
+//Type coercion
