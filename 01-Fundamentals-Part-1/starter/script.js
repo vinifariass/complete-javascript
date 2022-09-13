@@ -14,9 +14,9 @@ if (js === "amazing") alert("Javascript is amazing");
 // console.log(typeof 'Jonas')
 // console.log(typeof 23)
 // console.log(typeof null)
-job = "teacher";
-var job = "programmer";
-let age = 30;
+// job = "teacher";
+// var job = "programmer";
+// let age = 30;
 lastName = "Vinicius Farias";
 console.log(lastName);
 
@@ -85,8 +85,54 @@ const markHigherBMI = bmiMark > bmiJohn;
 
 console.log(bmiJohn, bmiMark, markHigherBMI);
 
+// const birthYear = 1991;
+// const year = 2037;
+// const job = teacher;
+// "I'm" + firstName + ", a" + (year - birthYear) + "years old" + job + "!";
+// console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(jonasNew);
+
+console.log("String with \n\
+multiple \n\
+lines");
+
+//Taking decisions if/else statemenst
+//Control structure
+const age = 19;
+const isOldEnough = age >= 18;
+if (isOldEnough) {
+  console.log("Sarah can start driving license 🚗");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+}
+
 const birthYear = 1991;
-const year = 2037;
-const jonas =
-  "I'm" + firstName + ", a" + (year - birthYear) + "years old" + job + "!";
-console.log(jonas);
+
+if (birthYear <= 2000) {
+  let century = 20;
+} else {
+  let century = 21;
+}
+// o que declaramos dentro do bloco nao sera acessivel fora do bloco
+
+////////////////////////////////////
+// Coding Challenge #2
+
+/*
+Use the BMI example from Challenge #1, and the code you already wrote, and improve it:
+
+1. Print a nice output to the console, saying who has the higher BMI. The message can be either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+2. Use a template literal to include the BMI values in the outputs. Example: "Mark's BMI (28.3) is higher than John's (23.9)!"
+
+HINT: Use an if/else statement 😉
+
+GOOD LUCK 😀
+*/
+if (bmiMark > bmiJohn) {
+  console.log(`Mark's BMI (${bmiMark}) is higher than John's (${bmiJohn})!  `);
+} else {
+  console.log(`John's (${bmiJohn}) BMI is higher than John's (${bmiMark})!`);
+}
