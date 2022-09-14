@@ -276,3 +276,49 @@ if (dolphins > koalas && dolphins >= 100) {
 } else if (dolphins == koalas && dolphins >= 100 && koalas >= 100) {
   console.log("DRAW!");
 }
+
+const day = "monday";
+switch (day) {
+  case "monday": //day === 'monday'
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Go to the college");
+    break;
+  case "saturday":
+    console.log("Go to the english course");
+  case "sunday":
+    console.log("Sleep");
+    break;
+  default:
+    console.log("Not a valid day");
+}
+
+if (day === "monday") {
+  console.log("Plan Course Structure");
+  console.log("Go to the coding metup");
+} else if (day === "wednesday") {
+  console.log("Nothing to do");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday") {
+  console.log("Nothing");
+} else if (day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Go to the college");
+} else if (day === "saturday") {
+  console.log("Go to the english course");
+} else if (day === "sunday") {
+  console.log("Sleep");
+} else {
+  console.log("Not a valid day");
+}
