@@ -294,7 +294,6 @@ switch (day) {
     console.log("Go to the college");
     break;
   case "saturday":
-    console.log("Go to the english course");
   case "sunday":
     console.log("Sleep");
     break;
@@ -309,15 +308,11 @@ if (day === "monday") {
   console.log("Nothing to do");
 } else if (day === "tuesday") {
   console.log("Prepare theory videos");
-} else if (day === "wednesday") {
-  console.log("Nothing");
-} else if (day === "thursday") {
+} else if (day === "wednesday" || day === "thursday") {
   console.log("Write code examples");
 } else if (day === "friday") {
   console.log("Go to the college");
-} else if (day === "saturday") {
-  console.log("Go to the english course");
-} else if (day === "sunday") {
+} else if (day === "saturday" || day === "sunday") {
   console.log("Sleep");
 } else {
   console.log("Not a valid day");
