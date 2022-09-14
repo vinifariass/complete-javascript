@@ -200,3 +200,28 @@ if (favourite == 23) {
 if (favourte !== 23) {
   console.log("Why not 23?");
 }
+
+//Basic Boolean Logic
+// Sarah has a driver's license AND good vision
+// If one is false all is false
+// Sarah has a driver's license OR good vision
+// If two are true or one they all are true
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+//basta que uma seja verdadeira para as duas serem verdadeiras
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+const isTired = false;
+if (hasDriversLicense & hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive");
+} else {
+  console.log("Someone else should drive");
+}
+
+console.log(isTired || hasGoodVision || hasDriversLicense);
