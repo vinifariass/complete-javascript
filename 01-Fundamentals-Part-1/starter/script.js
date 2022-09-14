@@ -331,3 +331,8 @@ if (23 > 10) {
 const ageVini = 22;
 age >= 10 ? "I like do drink wiwin" : "i like to drin water";
 //if we want to be true is after the interrogation and false after two poitns
+
+let drink2;
+ageVini > 18 ? "Wine " : "🍼";
+
+console.log(`I like to drink {ageVini > 18 ? 'Wine ' : '🍼';}`)
