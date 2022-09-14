@@ -325,3 +325,9 @@ if (23 > 10) {
   const str = "23 is bigger";
 }
 // you cannot insert an if statement inside a template string
+
+//The condicional operator(ternary)
+
+const ageVini = 22;
+age >= 10 ? "I like do drink wiwin" : "i like to drin water";
+//if we want to be true is after the interrogation and false after two poitns
