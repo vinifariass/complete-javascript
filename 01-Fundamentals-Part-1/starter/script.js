@@ -317,3 +317,11 @@ if (day === "monday") {
 } else {
   console.log("Not a valid day");
 }
+
+//Statements and Expressions
+//Statement is a big piece of code that is executed that not produce value on itself and we can comparise with normal language
+// Expressions produce values
+if (23 > 10) {
+  const str = "23 is bigger";
+}
+// you cannot insert an if statement inside a template string
