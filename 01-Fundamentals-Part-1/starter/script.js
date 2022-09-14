@@ -137,17 +137,32 @@ if (bmiMark > bmiJohn) {
   console.log(`John's (${bmiJohn}) BMI is higher than Mark's (${bmiMark})!`);
 }
 
-const inputYear = '1991'
+const inputYear = "1991";
 //the original value was not converted
-console.log(Number(inputYear))
-console.log(Number(inputYear) + 18)
+console.log(Number(inputYear));
+console.log(Number(inputYear) + 18);
 //NaN not a number(numero invalido)
-console.log(String(23),23)
+console.log(String(23), 23);
 
 //Type coercion
-console.log('I am' + 23 + ' years old');
-//If we use minus they are converted to number 
+console.log("I am" + 23 + " years old");
+//If we use minus they are converted to number
 //If we use plus they are converted to string
-console.log('23' - '10' - 3) 
-console.log('23'* '2')
+console.log("23" - "10" - 3);
+console.log("23" * "2");
 //times converts to number two
+
+//Truthy and falsy values
+
+console.log(Boolean(0)); //fase
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas")); // true
+console.log(Boolean({})); //trie
+// Ocorre na condicao de if e else na coerçao
+
+const money = 0;
+if (money) {
+  console.log("Dont spend it all");
+} else {
+  console.log("You should get a job");
+}
