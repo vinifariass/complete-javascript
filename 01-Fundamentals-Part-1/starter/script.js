@@ -100,7 +100,7 @@ lines");
 
 //Taking decisions if/else statemenst
 //Control structure
-const age = 19;
+// const age = 19;
 const isOldEnough = age >= 18;
 if (isOldEnough) {
   console.log("Sarah can start driving license 🚗");
@@ -165,4 +165,38 @@ if (money) {
   console.log("Dont spend it all");
 } else {
   console.log("You should get a job");
+}
+
+let height;
+//height sera convertida para um booleano
+
+if (height) {
+  console.log("YAy Height is defined");
+} else {
+  console.log("Heigh is undefined");
+}
+
+const age = 18;
+if (age === 18) console.log("You just became a adult :D(strict)");
+if (age == 18) console.log("You just became an adult(loose)");
+
+// aparece um prompt na tela e armazena um valor
+const favourite = prompt("What's your favorite number?");
+
+console.log(favourite);
+
+console.log(typeof favourte);
+
+if (favourite == 23) {
+  console.log("Cool| 23 is an amazing number");
+} else if (favourite === 7) {
+  console.log("7 is also a cool number");
+} else if (favourte == 9) {
+  console.log("9 is also a cool number");
+} else {
+  console.log("Number is not 23 or 7");
+}
+
+if (favourte !== 23) {
+  console.log("Why not 23?");
 }
