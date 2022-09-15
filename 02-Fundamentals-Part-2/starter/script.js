@@ -22,3 +22,4 @@ console.log(appleJuice);
 console.log(fruitProcessor(5, 0));
 
 const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
