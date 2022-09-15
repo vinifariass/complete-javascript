@@ -54,7 +54,11 @@ console.log(age3);
 const yearsUntilRetirement = (birthYear, firstName) => {
   const age = 2037 - birthYear;
   const retirement = 65 - age;
-  return `${firstName} retires in ${retirement} years`;
+  if (retirement > 0) {
+    return retirement;
+  } else {
+    return -1;
+  }
 };
 
 console.log(yearsUntilRetirement(1991, "Vinicius"));
@@ -67,7 +71,7 @@ function fruitProcessor(apples, oranges) {
   const applePieces = cutFruitPieces(apples);
   const orangePieces = cutFruitPieces(oranges);
 
-  const juice = `Juice with ${applePieces} piece of apples ${orangePieces}and pieces of oranges`
+  const juice = `Juice with ${applePieces} piece of apples ${orangePieces}and pieces of oranges`;
 }
 
 fruitProcessor(2, 3);
