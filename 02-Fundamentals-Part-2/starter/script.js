@@ -29,7 +29,7 @@ console.log(appleOrangeJuice);
 //Function declarations and expressions
 //generic function
 function calcAge1(birthYear) {
-  return (age = 2037 - birthYear);
+  return 2037 - birthYear;
 }
 const age1 = calcAge1(1991);
 calcAge1(1997);
@@ -42,3 +42,6 @@ const calcAge2 = function (birthYear) {
 const age2 = calcAge2(1991);
 
 console.log(age1, age2);
+
+//Arrow function is a shorter form but faster to write
+const calcAge3 = (birthYear) => 2037 - birthYear;
