@@ -31,3 +31,14 @@ console.log(appleOrangeJuice);
 function calcAge1(birthYear) {
   return (age = 2037 - birthYear);
 }
+const age1 = calcAge1(1991);
+calcAge1(1997);
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+// functions are like vale but is not type and we can store than in a variable
+
+const age2 = calcAge2(1991);
+
+console.log(age1, age2);
