@@ -188,12 +188,17 @@ function calcTip(bill) {
   var total = bill * tip;
   return total;
 }
-let bill1 = 125
-let bill2 = 555
-let bill3 = 44
-let bills = [bill1,bill2,bill3]
+function createArray(value1, value2, value3) {
+  return [value1, value2, value3];
+}
 
-let tips1 =calcTip(bill1)
-let tips2 = calcTip(bill2)
-let tips3 = calcTip(bill3)
-let tips = [tips1,tips2,tips3]
+let bill1 = 125;
+let bill2 = 555;
+let bill3 = 44;
+
+console.log(createArray(bill1, bill2, bill3));
+let tips1 = calcTip(bill1);
+let tips2 = calcTip(bill2);
+let tips3 = calcTip(bill3);
+createArray(tips1, tips2, tips3);
+console.log(createArray(tips1, tips2, tips3));
