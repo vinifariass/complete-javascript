@@ -100,8 +100,13 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 function calcAverage(score1, score2, score3) {
   return (score1 + score2 + score3) / 3;
 }
+const avgDolhins = calcAverage(44, 23, 71);
+const avgKoalas = calcAverage(85, 23, 71);
 
-function checkWinner()
-
-calcAverage(44,23,71)
-calcAverage(85,23,71)
+function checkWinner() {
+  if (avgDolhins > avgKoalas) {
+    console.log(`Dolphins wins(${avgDolhins} vs. ${avgKoalas})`);
+  } else {
+    console.log(`Koalas wins(${avgKoalas} vs. ${avgDolhins})`);
+  }
+}
