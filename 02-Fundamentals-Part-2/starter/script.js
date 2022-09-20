@@ -128,3 +128,8 @@ console.log(friends[0]);
 console.log(friends[2]);
 console.log(friends.length);
 console.log(friends.length[friends.length - 1]);
+
+const jonas = ['Jonas','Schmedtmann',2037-1991,'teacher',friends];
+console.log(jonas.length);
+
+const yearsAge = [1990,1967,2002,2010,2018];
