@@ -106,7 +106,17 @@ const avgKoalas = calcAverage(85, 23, 71);
 function checkWinner() {
   if (avgDolhins > avgKoalas * 2) {
     console.log(`Dolphins wins(${avgDolhins} vs. ${avgKoalas})`);
-  } else if(avgKoalas>= avgDolhins*2){
+  } else if (avgKoalas >= avgDolhins * 2) {
     console.log(`Koalas wins(${avgKoalas} vs. ${avgDolhins})`);
+  } else {
+    console.log("No teams wins");
   }
 }
+
+//Introduction of Array
+//como um grande conteiner na qual pode lançar variaveis e são armazenados nessas estrutura de dados
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = [friend1, friend2, friend3];
