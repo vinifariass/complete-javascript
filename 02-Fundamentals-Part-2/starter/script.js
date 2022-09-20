@@ -210,3 +210,8 @@ const vinicius = {
   job: "Developer Jr",
   friends: ["Derick", "Luiz", "CJ", "Squirrel"],
 };
+
+console.log(jonas.alstName);
+const nameKey = "Name";
+console.log(jonas["firts" + nameKey]);
+console.log(jonas["last" + nameKey]);
