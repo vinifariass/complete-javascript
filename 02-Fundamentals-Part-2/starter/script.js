@@ -31,15 +31,15 @@ console.log(appleOrangeJuice);
 function calcAge1(birthYear) {
   return 2037 - birthYear;
 }
-const age1 = calcAge1(1991);
-calcAge1(1997);
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const age1 = calcAge1(1991);
+// calcAge1(1997);
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
 // functions are like vale but is not type and we can store than in a variable
 
-const age2 = calcAge2(1991);
+// const age2 = calcAge2(1991);
 
 console.log(age1, age2);
 
@@ -129,7 +129,16 @@ console.log(friends[2]);
 console.log(friends.length);
 console.log(friends.length[friends.length - 1]);
 
-const jonas = ['Jonas','Schmedtmann',2037-1991,'teacher',friends];
+const jonas = ["Jonas", "Schmedtmann", 2037 - 1991, "teacher", friends];
 console.log(jonas.length);
 
-const yearsAge = [1990,1967,2002,2010,2018];
+const yearsAge = [1990, 1967, 2002, 2010, 2018];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+
+//Basic Operators Methods
+
+// method push -> add an element in the final of n array
+
+const friendsS = ['Michael'.'Steven','Peter'];
+friendsS.push('Jay')
