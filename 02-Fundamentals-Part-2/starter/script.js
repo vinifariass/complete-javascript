@@ -120,3 +120,11 @@ const friend2 = "Steven";
 const friend3 = "Peter";
 
 const friends = [friend1, friend2, friend3];
+console.log(friends);
+//A function that call with parentheses
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends.length[friends.length - 1]);
