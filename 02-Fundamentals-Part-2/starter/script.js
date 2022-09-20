@@ -179,24 +179,17 @@ GOOD LUCK 😀
 
 var bill = 275;
 
-
-
 function calcTip(bill) {
-  var tip = bill > 50 && bill < 300 ? 0.15 : 0.2;
-  var total = bill * tip;
-  return total;
-}
-function createArray(value1, value2, value3) {
-  return [value1, value2, value3];
+  return bill > 50 && bill < 300 ? 0.15 : 0.2;
 }
 
-let bill1 = 125;
-let bill2 = 555;
-let bill3 = 44;
+bills = [125,555,44]
 
-let tips1 = calcTip(bill1);
-let tips2 = calcTip(bill2);
-let tips3 = calcTip(bill3);
-createArray(tips1, tips2, tips3);
-console.log(createArray(bill1, bill2, bill3));
-console.log(createArray(tips1, tips2, tips3));
+let tips = [calcTip(bill[0]),calcTip(bill[1]),calcTip(bill[2])];
+let tips3 = calcTip(bill[2]);
+const totals = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]];
+console.log(( bill[0],bill[1], bill[2]));
+console.log((tips[0], tips[1], tips[2]));
+
+
+//Objects
