@@ -41,7 +41,7 @@ function calcAge1(birthYear) {
 
 // const age2 = calcAge2(1991);
 
-console.log(age1, age2);
+// console.log(age1, age2);
 
 //Arrow function is a shorter form but faster to write
 // are excellent for function of one line
@@ -63,16 +63,16 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, "Vinicius"));
 
-const cutPieces = function (fruit) {
-  return fruit * 4;
-};
+// const cutFruitPieces = function (fruit) {
+//   return fruit * 4;
+// };
 
-function fruitProcessor(apples, oranges) {
-  const applePieces = cutFruitPieces(apples);
-  const orangePieces = cutFruitPieces(oranges);
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
 
-  const juice = `Juice with ${applePieces} piece of apples ${orangePieces}and pieces of oranges`;
-}
+//   const juice = `Juice with ${applePieces} piece of apples ${orangePieces}and pieces of oranges`;
+// }
 
 fruitProcessor(2, 3);
 
@@ -133,8 +133,8 @@ const jonas = ["Jonas", "Schmedtmann", 2037 - 1991, "teacher", friends];
 console.log(jonas.length);
 
 const yearsAge = [1990, 1967, 2002, 2010, 2018];
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
 
 //Basic Operators Methods
 
@@ -179,9 +179,7 @@ GOOD LUCK 😀
 
 var bill = 275;
 
-console.log(
-  `The bill was ${bill}, the tip was ${tip}, and the total value ${total}`
-);
+
 
 function calcTip(bill) {
   var tip = bill > 50 && bill < 300 ? 0.15 : 0.2;
@@ -196,9 +194,9 @@ let bill1 = 125;
 let bill2 = 555;
 let bill3 = 44;
 
-console.log(createArray(bill1, bill2, bill3));
 let tips1 = calcTip(bill1);
 let tips2 = calcTip(bill2);
 let tips3 = calcTip(bill3);
 createArray(tips1, tips2, tips3);
+console.log(createArray(bill1, bill2, bill3));
 console.log(createArray(tips1, tips2, tips3));
