@@ -183,13 +183,30 @@ function calcTip(bill) {
   return bill > 50 && bill < 300 ? 0.15 : 0.2;
 }
 
-bills = [125,555,44]
+bills = [125, 555, 44];
 
-let tips = [calcTip(bill[0]),calcTip(bill[1]),calcTip(bill[2])];
+let tips = [calcTip(bill[0]), calcTip(bill[1]), calcTip(bill[2])];
 let tips3 = calcTip(bill[2]);
-const totals = [bills[0] + tips[0],bills[1] + tips[1],bills[2] + tips[2]];
-console.log(( bill[0],bill[1], bill[2]));
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log((bill[0], bill[1], bill[2]));
 console.log((tips[0], tips[1], tips[2]));
 
-
 //Objects
+
+const viniciusArray = [
+  "Vinicius",
+  "Farias",
+  "Silva",
+  "programador",
+  "Michael",
+  ["Michael", "Peter", "Steven"],
+];
+
+const vinicius = {
+  firstName: "Vinicius",
+  //this keys we call property
+  lastName: "Farias",
+  age: 2022 - 2000,
+  job: "Developer Jr",
+  friends: ["Derick", "Luiz", "CJ", "Squirrel"],
+};
