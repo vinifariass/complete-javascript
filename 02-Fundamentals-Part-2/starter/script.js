@@ -129,7 +129,7 @@ console.log(friends[2]);
 console.log(friends.length);
 console.log(friends.length[friends.length - 1]);
 
-const jonas = ["Jonas", "Schmedtmann", 2037 - 1991, "teacher", friends];
+// const jonas = ["Jonas", "Schmedtmann", 2037 - 1991, "teacher", friends];
 console.log(jonas.length);
 
 const yearsAge = [1990, 1967, 2002, 2010, 2018];
@@ -140,5 +140,65 @@ const age2 = calcAge(years[1]);
 
 // method push -> add an element in the final of n array
 
-const friendsS = ['Michael'.'Steven','Peter'];
-friendsS.push('Jay')
+const friendsS = ["Michael", "Steven", "Peter"];
+friendsS.push("Jay");
+
+const jonas = {
+  name: "Jonas",
+  lastName: "Schmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriverLicense: true,
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+  },
+  getSumary: function () {
+    return `${jonas.name} is a ${this.calcAge()}-year old ${
+      jonas.job
+    } and he has ${this.hasDriverLicense ? "a" : "no"} driver's license`;
+  },
+  //to call a function inside a object
+};
+
+console.log(jonas.getSumary());
+
+///////////////////////////////////////
+// Coding Challenge #3
+
+/*
+Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height). (mass in kg and height in meter)
+
+1. For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith)
+2. Create a 'calcBMI' method on each object to calculate the BMI (the same method on both objects). Store the BMI value to a property, and also return it from the method.
+3. Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95 m tall.
+
+GOOD LUCK 😀
+*/
+
+const person1 = {
+  fullName: "Marks Miller",
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    return (this.mass/ (this.height**2))
+  },
+};
+const person2 = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    return (this.mass/ (this.height**2))
+  },
+};
+
+
+if(person1.calcBMI()>person2.calcBMI()){
+  console.log(`${person1.fullName} BMI (${person1.calcBMI()} is higher than ${person2.fullName} (${calcBMI()}))`);
+}else{
+  console.log(`${person2.fullName} BMI (${person2.calcBMI()} is higher than ${person1.fullName} (${calcBMI()}))`);
+
+}
