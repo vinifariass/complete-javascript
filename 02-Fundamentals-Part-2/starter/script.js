@@ -233,6 +233,60 @@ const yearsTest = [1991, 2007, 1969, 2020];
 const ages = [];
 
 for (let i = 0; i < years.length; i++) {
-  if(typeof jonas[i] !== 'string') continue;
+  if (typeof jonas[i] !== "string") continue;
   ages.push(2037 - years[i]);
+}
+// Looping backwards and loops in loops
+for (let i = jonas.length; i >= 0; i--) {
+  console.log(i, jonas[i]);
+}
+
+for (let rep = 1; rep < 6; rep++) {
+  console.log(`Exercise ${exercise}: Lifting weight reptition ${rep}`);
+}
+
+while (rep <= 10) {
+  console.log(` Lifting weights repetion ${rep}🏋️‍♂️´`);
+  rep++;
+}
+
+while (dice !== 6) {
+  let = Math.trunc(Math.random() * 6);
+  console.log(dice);
+  console.log(`You rolled a ${dice}`);
+}
+
+///////////////////////////////////////
+// Coding Challenge #4
+
+/*
+Let's improve Steven's tip calculator even more, this time using loops!
+
+1. Create an array 'bills' containing all 10 test bill values
+2. Create empty arrays for the tips and the totals ('tips' and 'totals')
+3. Use the 'calcTip' function we wrote before (no need to repeat) to calculate tips and total values (bill + tip) for every bill value in the bills array. Use a for loop to perform the 10 calculations!
+
+TEST DATA: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+
+HINT: Call calcTip in the loop and use the push method to add values to the tips and totals arrays 😉
+
+4. BONUS: Write a function 'calcAverage' which takes an array called 'arr' as an argument. This function calculates the average of all numbers in the given array. This is a DIFFICULT challenge (we haven't done this before)! Here is how to solve it:
+  4.1. First, you will need to add up all values in the array. To do the addition, start by creating a variable 'sum' that starts at 0. Then loop over the array using a for loop. In each iteration, add the current value to the 'sum' variable. This way, by the end of the loop, you have all values added together
+  4.2. To calculate the average, divide the sum you calculated before by the length of the array (because that's the number of elements)
+  4.3. Call the function with the 'totals' array
+
+GOOD LUCK 😀
+*/
+
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [10, 12, 13, 14, 15, 16, 17, 19, 16, 29];
+let totals = [];
+
+function calcTip(i, k) {
+  total = bill[i] + tips[k];
+  return total;
+}
+for (i = 0; i < bills.length - 1; i++) {
+  let totaltip = calcTip(i, i);
+totaltip.push()
 }
