@@ -183,7 +183,7 @@ const person1 = {
   mass: 78,
   height: 1.69,
   calcBMI: function () {
-    return (this.mass/ (this.height**2))
+    return this.mass / this.height ** 2;
   },
 };
 const person2 = {
@@ -191,14 +191,47 @@ const person2 = {
   mass: 92,
   height: 1.95,
   calcBMI: function () {
-    return (this.mass/ (this.height**2))
+    return this.mass / this.height ** 2;
   },
 };
 
+if (person1.calcBMI() > person2.calcBMI()) {
+  console.log(
+    `${person1.fullName} BMI (${person1.calcBMI()} is higher than ${
+      person2.fullName
+    } (${calcBMI()}))`
+  );
+} else {
+  console.log(
+    `${person2.fullName} BMI (${person2.calcBMI()} is higher than ${
+      person1.fullName
+    } (${calcBMI()}))`
+  );
+}
 
-if(person1.calcBMI()>person2.calcBMI()){
-  console.log(`${person1.fullName} BMI (${person1.calcBMI()} is higher than ${person2.fullName} (${calcBMI()}))`);
-}else{
-  console.log(`${person2.fullName} BMI (${person2.calcBMI()} is higher than ${person1.fullName} (${calcBMI()}))`);
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights reptition ${rep}`);
+}
 
+const jonasArray = [
+  "jonas",
+  "Farias",
+  "teacher",
+  "22 years",
+  ["Michael", "Peter", "Steven"],
+];
+//Filling types array
+
+//Reading for jonas array
+for (let i = 0; i < jonas.length; i++) {
+  console.log(jonas[0]);
+
+  types.push(typeof jonas[i]);
+}
+
+const yearsTest = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
 }
