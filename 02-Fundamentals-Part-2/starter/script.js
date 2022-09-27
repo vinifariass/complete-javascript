@@ -330,3 +330,12 @@ console.log(calcAverage([2, 3, 7]));
 
 const array1 = ['a','b','c']
 const array2 = ['d','e','f']
+
+const temps = t1.concat(t2)
+console.log(temps)
+function calcTempAplitudeNew(){
+ const temps= t1.concat(t2)
+ console.log(temps);
+}
+const amplitudeNew=  calcTempAplitudeNew([3,5,1],[9,0,5])
+console.log(amplitudeNew);
