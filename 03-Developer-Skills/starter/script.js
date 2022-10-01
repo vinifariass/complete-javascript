@@ -21,3 +21,12 @@ const calcTempAmplitude = function (temps) {
 };
 
 calcTempAmplitude([3, 7, 4]);
+const temp = [17, 21, 23]
+const temp2 = [12, -5, 5, 0, 4]
+k = 1;
+function printForecast() {
+  for (let i = 0; i < temp.length - 1; i++) {
+    print(`${temp[1]}ºC in ${k} days`)
+    k++;
+  }
+}
