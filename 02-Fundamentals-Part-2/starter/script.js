@@ -301,4 +301,41 @@ const calcAverage = function (arr) {
   return sum / arr.length;
 };
 
+//Introduction of Array
+//como um grande conteiner na qual pode lançar variaveis e são armazenados nessas estrutura de dados
+const friend1 = "Michael";
+const friend2 = "Steven";
+const friend3 = "Peter";
+
+const friends = [friend1, friend2, friend3];
+console.log(friends);
+//A function that call with parentheses
+const years = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends.length[friends.length - 1]);
+
+const jonas = ["Jonas", "Schmedtmann", 2037 - 1991, "teacher", friends];
+console.log(jonas.length);
+
+const yearsAge = [1990, 1967, 2002, 2010, 2018];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+
+//Basic Operators Methods
+
 console.log(calcAverage([2, 3, 7]));
+
+const array1 = ['a','b','c']
+const array2 = ['d','e','f']
+
+const temps = t1.concat(t2)
+console.log(temps)
+function calcTempAplitudeNew(){
+ const temps= t1.concat(t2)
+ console.log(temps);
+}
+const amplitudeNew=  calcTempAplitudeNew([3,5,1],[9,0,5])
+console.log(amplitudeNew);
