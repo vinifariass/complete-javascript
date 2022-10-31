@@ -29,8 +29,12 @@ const jonas = {
   year: 1991, calcAge: function () {
     console.log(this)
     console.log(2037 - this.year)
-  }
+  },
+  greet: () => console.log(`Hey ${this.firstName}`)
+
+
 }
+jonas.greet()
 jonas.calcAge()
 
 const matilda = {
@@ -42,3 +46,35 @@ matilda.calcAge()
 
 const f = jonals.calcAge
 f()
+//arguments keyword
+const addExpr = function (a, b) {
+  console.log(arguments)
+  return a + b;
+}
+addExpr(2, 5)
+
+let lastName = 'Williams'
+let oldLastName = lastName
+lastName = 'Davis'
+console.log(lastName, oldLastName);
+
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family:['Alice','Bob']
+}
+
+const marriedJessica = jessica
+marriedJessica.lastName = 'Davis'
+console.log('Before marriage:', jessica)
+console.log('After marriage', marriedJessica)
+
+//merge two objects
+const jessicaCopy = Object.assign({}, jessica2)
+jessicaCopy.lastName = 'Davis'
+console.log('Before marriage:' ,jessica2)
+console.log('After marriage:' ,jessicaCopy)
+
+jessicaCopy.family.push('Mary')
+jessicaCopy.family.push('John')
