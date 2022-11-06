@@ -53,3 +53,53 @@ console.log(i, j, k)
 
 const [p, q, r] = [8, 9]
 console.log(p, q, r)
+// Destructure objects
+
+const { name, openingHours, categories } = restaurant
+const {
+  name: restaurantName,
+  openingHours: hours,
+  categories: tags,
+}
+  = restaurant;
+console.log(restaurantName, hours, tags)
+
+const { menu = [], starterMenu: starters = [] } = restaurant
+console.log(menu, starters)
+
+//Mutating variables
+let a = 111
+let b = 999
+const obj = { a: 23, b: 7, c: 14 }
+  ({ a, b } = obj);
+
+//nested objects = objetos aninhados
+
+const { fri: { open, close } } = openingHours
+console.log(open, close)
+
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'Via del Sole,21',
+  mainIndex: 2,
+  starterIndex: 2
+})
+const arr2 = [7, 8, 9]
+const badNewArray = [1, 2, arr2[0], arr2[1], arr2[2]]
+console.log(badNewArray)
+
+//Spread operator
+
+const newArray = [1, 2, ...arr2]
+// expand this array to all results
+console.log(newArray)
+
+const mainMenuCopy = [...restaurant.mainMenu]
+
+const menu1 = [...restaurant.starterMenu, ...restaurant.mainMenu]
+
+//iterables: arrays, strings,maps,sets.not objects
+
+const str = 'Jonas'
+const letters = [...str,'','S.']
+
